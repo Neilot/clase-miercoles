@@ -1,20 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
-import { PersonagensComponent } from './personagens/personagens.component';
-import { PlanetasComponent } from './planetas/planetas.component';
-import { SnakecasePipe } from './../snakecase.pipe';
-import { PersonagemComponent } from './personagem/personagem.component';
+import { UsersComponent } from './users/users.component';
 import { RouterModule } from '@angular/router';
-import { PlanetaComponent } from './planeta/planeta.component';
 
 
 @NgModule({
-  declarations: [HomeComponent,PersonagensComponent,PlanetasComponent,SnakecasePipe,PersonagemComponent,PlanetaComponent],
+  declarations: [HomeComponent,UsersComponent],
   imports: [
     CommonModule,
     RouterModule
   ],
-  exports: [HomeComponent,PersonagensComponent,PlanetasComponent,SnakecasePipe,PersonagemComponent,PlanetaComponent],
+  exports: [HomeComponent,UsersComponent],
 })
 export class ComponentsModule { }
